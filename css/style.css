@@ -1,0 +1,20 @@
+.container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh auto;
+}
+
+.quadrato {
+  width: 90px;
+  height: 90px;
+  border: 1px solid grey;
+}
+
+.giallo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}
