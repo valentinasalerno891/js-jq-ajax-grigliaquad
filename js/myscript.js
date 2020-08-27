@@ -15,10 +15,12 @@ $(document).ready(function() {
 
           numero.text(risposta.response);
           if (numero > 5) {
-            numero.click(risposta.response);
-            $('.quadrato').addClass('.verde');
+            numero.addClass('.verde');
+            // $('.quadrato').addClass('.verde');
         } else {
-            $('.quadrato').addClass('.giallo');
+            numero.addClass('.giallo');
+            // $('.quadrato').addClass('.giallo');
+
         }
         },
       }
