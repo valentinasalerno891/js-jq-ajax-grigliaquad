@@ -12,20 +12,16 @@ $(document).ready(function() {
         'url': "https://flynn.boolean.careers/exercises/api/random/int",
         'method': "GET",
         'success': function (risposta) {
-
-          numero.text(risposta.response);
-          if (numero > 5) {
-            numero.addClass('.verde');
-            // $('.quadrato').addClass('.verde');
-        } else {
-            numero.addClass('.giallo');
-            // $('.quadrato').addClass('.giallo');
-
+            numero.text(risposta.response);
+            if (risposta.response > 5) {
+            numero.addClass('verde');
+            // $(‘.quadrato’).addClass(‘.verde’);
+            } else {
+            numero.addClass('giallo');
+            // $(‘.quadrato’).addClass(‘.giallo’);
+            }
         }
-        },
       }
     );
-
   });
-
 });
