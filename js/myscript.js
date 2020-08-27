@@ -12,12 +12,13 @@ $(document).ready(function() {
         'url': "https://flynn.boolean.careers/exercises/api/random/int",
         'method': "GET",
         'success': function (risposta) {
-          // console.log(testo);
+
           numero.text(risposta.response);
           if (numero > 5) {
-            $(this).addClass('.verde');
+            numero.click(risposta.response);
+            $('.quadrato').addClass('.verde');
         } else {
-            $(this).addClass('.giallo');
+            $('.quadrato').addClass('.giallo');
         }
         },
       }
